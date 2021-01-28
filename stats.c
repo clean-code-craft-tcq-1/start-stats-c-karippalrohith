@@ -23,14 +23,17 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
         }
     }
     
-    if(setlength != 0)
-    {
+   // if(setlength != 0)
+   // {
         s.average = sum/setlength;
-    }
-    else
-    {
-         s.average = NaN;
-    }
+  //  }
+    //else
+    //{
+         if(s.average.isNaN())
+         {
+           s.average = 0;  
+         }
+    //}
     return s;
 }
 
