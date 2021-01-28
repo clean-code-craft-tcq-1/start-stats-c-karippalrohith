@@ -22,7 +22,15 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
            s.max =  numberset[i];
         }
     }
-    s.average = sum/setlength;
+    
+    if(setlength != 0)
+    {
+        s.average = sum/setlength;
+    }
+    else
+    {
+         s.average = NaN;
+    }
     return s;
 }
 
