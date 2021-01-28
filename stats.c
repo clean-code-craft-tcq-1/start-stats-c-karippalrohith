@@ -29,7 +29,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     }
     else
     {
-         s.average = NaN;
+      //   s.average = NaN;
     }
     return s;
 }
