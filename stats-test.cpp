@@ -30,7 +30,7 @@ TEST_CASE("raises alerts when max is greater than threshold") {
     // create additional .c and .h files
     // containing the emailAlerter, ledAlerter functions
     char emailAlerter[100] = "karippalrohith@gmail.com";
-    char ledAlerter[100] = "alert LED";
+    //char ledAlerter[100] = "alert LED";
     alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
 
     float numberset[] = {99.8, 34.2, 4.5};
