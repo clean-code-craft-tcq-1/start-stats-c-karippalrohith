@@ -23,15 +23,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
         }
     }
     
-   // if(setlength != 0)
-    //{
-        s.average = sum/setlength;
-    //}
-   // else
-    //{
-      //  s.average = 0;  
-    //}
-    
+    s.average = sum/setlength;
+
     return s;
 }
 
