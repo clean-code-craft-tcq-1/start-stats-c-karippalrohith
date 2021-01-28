@@ -2,12 +2,16 @@
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
     struct Stats s;
-    float sum;
+    float sum = 0;
+    int i = 0;
     s.average = 0;
     s.min = 0;
     s.max = 0;
     
-    sum = numberset[0]+numberset[1]+numberset[2]+numberset[3]+numberset[4];
+    for(i=0;i<setlength;i++)
+    {
+        sum = sum + numberset[i];
+    }
     s.average = sum/setlength;
     return s;
 }
